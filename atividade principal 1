@@ -1,0 +1,63 @@
+Nome_do_usuario=str(input(print("Insira o usuário: ")))
+tipo_de_problema=int(input(print("Qual o tipo de problema(Escolha uma opção) ? :\n1-Virus\n2-Lentidão\n3-Travamento\n4-Otimização\n-5-Formatação\n6-Imconpatibilidade de atualização dse sistema\n7-Limpeza\n8-Manutenção\n9-Atualização de sistema operacional\n10-Limpeza virtual ")))
+tempo=int(input("Tempo que o problema está ocorrendo(hrs): "))
+
+if tipo_de_problema == 1 and tempo >= 0:
+    print("\nProblema de prioridade Alta")
+
+elif tipo_de_problema == 1 and tempo >= 3:
+    print("\nProblema de prioridade Crítica")
+
+elif tipo_de_problema == 2 and tempo >= 6:
+    print("\nProblema de prioridade Média")
+
+elif tipo_de_problema == 2 and tempo > 12:
+    print("\nProblema de prioridade Alta")
+
+elif tipo_de_problema == 2 and tempo < 6:
+    print("\nProblema de prioridade Baixa")
+
+elif tipo_de_problema == 3 and tempo < 4:
+    print("\nProblema de prioridade Média")
+
+elif tipo_de_problema == 3 and tempo >= 4:
+    print("\nProblema de proridade Alta")
+
+elif tipo_de_problema == 3 and tempo >= 7:
+    print("\nProblema de prioridade Crítica")
+
+elif tipo_de_problema == 4 and tempo >= 0:
+    print("\nProblema de prioridade Baixa")
+
+elif tipo_de_problema == 5 and tempo >= 0:
+    print("\nProblema de prioridade Baixa")
+
+elif tipo_de_problema == 5 and tempo >= 5:
+    print("\nProblema de prioridade Média")
+
+elif tipo_de_problema == 6 and tempo >= 0:
+    print("\nProblema de prioridade Média")
+
+elif tipo_de_problema == 6 and tempo >= 4:
+    print("\nProblema de prioridade Alta")
+
+elif tipo_de_problema == 7 and tempo >= 0:
+    print("\nProblema de prioridade Baixa")
+
+elif tipo_de_problema == 8 and tempo >= 0:
+    print("\nProblema de prioridade Média")
+
+elif tipo_de_problema == 8 and tempo >= 7:
+    print("\nProblema de prioridade Alta")
+
+elif tipo_de_problema == 9 and tempo >= 0:
+    print("\nProblema de prioridade Alta")
+
+elif tipo_de_problema == 9 and tempo >= 4:
+    print("\nnProblema de prioridade Crítica")
+
+elif tipo_de_problema == 10 and tempo >= 0:
+    print("\nProblema de prioridade Baixa")
+
+else:
+    print("\nErro opção ou Tempo inválidos! ")
